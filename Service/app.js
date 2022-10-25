@@ -6,11 +6,12 @@ class Cadastro {
         });
 
         app.post("/cadastro", async (req,res)=>{
-            const{name,email} = req.body
+            const{name,email,data_cadastro} = req.body
             
             const leads = {
                 name,
-                email,                
+                email, 
+                data_cadastro,               
             }
 
             try {
